@@ -1,0 +1,49 @@
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+#canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#score-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+#button-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  width: 70px;
+  height: 40px;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+}
+
+#score {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  top: 79px;
+  left: 10px;
+  font-size: 24px;
+  z-index: 2;
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
