@@ -77,11 +77,13 @@ window.onload = function () {
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = "red";
-    context.fillRect(x, y, 50, 50);
+    var image = new Image();
+    image.src = "./assets/image.webp";
+    context.drawImage(image, x, y, 50, 50);
 
-    context.fillStyle = "#e3c228";
-    context.fillRect(coinx, coiny, 30, 30);
+    var img = new Image();
+    img.src = "./assets/coins.png";
+    context.drawImage(img, coinx, coiny, 30, 30);
 
     if (dir == 1) {
       if (x + 50 < canvas.width) {
