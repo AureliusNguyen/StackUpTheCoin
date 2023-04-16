@@ -79,7 +79,7 @@ window.onload = function () {
 
     var image = new Image();
     image.src = "./assets/image.webp";
-    context.drawImage(image, x, y, 50, 50);
+    context.drawImage(image, x, y, 70, 70);
 
     var img = new Image();
     img.src = "./assets/coins.png";
@@ -104,9 +104,9 @@ window.onload = function () {
     }
 
     if (
-      coinx <= x + 50 &&
+      coinx <= x + 70 &&
       x <= coinx + 30 &&
-      coiny <= y + 50 &&
+      coiny <= y + 70 &&
       y <= coiny + 30
     ) {
       score++;
